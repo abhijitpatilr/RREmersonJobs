@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://mythermostat.sensicomfort.com/" />
+<title>SensiTstatMonitoring</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">SensiTstatMonitoring</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>https://mythermostat.sensicomfort.com</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>id=login-logo</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=forgot-password-link</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=username</td>
+	<td>aravind.nanjundaswamy@emerson.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=password</td>
+	<td>111111</td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=btnSignIn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td></td>
+	<td>100000</td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=span.hi-lo</td>
+	<td>Hi</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>css=div.low &gt; span.hi-lo</td>
+	<td>Lo</td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//html/body/div[2]/div/div/div[1]/div[2]/div/div/div[1]/header/div[2]/div/ul/li[2]/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>$(weather}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=div.location</td>
+	<td>St. Louis, MO</td>
+</tr>
+<tr>
+	<td>storeTextPresent</td>
+	<td>css=div.date</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>css=span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>css=a.trigger</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='status-opened']/div/div/p/label[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td></td>
+	<td>30000</td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//div[@id='status-opened']/div/div/p/label[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td></td>
+	<td>20000</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.switch-right.switch-mini</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=span.switch-left.switch-mini</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.trigger.close</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='set-current-temp']/div/div/div/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//div[@id='set-current-temp']/div/div/div/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//div[@id='set-current-temp']/div/div/div/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//div[@id='set-current-temp']/div/div/div/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td></td>
+	<td>100000</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>//div[@id='set-current-temp']/div/div/div/i[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//div[@id='set-current-temp']/div/div/div/i[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAt</td>
+	<td>//div[@id='set-current-temp']/div/div/div/i[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>//div[@id='set-current-temp']/div/div/div/i[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//div[@id='set-current-temp']/div/div/div/i[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>//html/body/div[2]/div/div/div[1]/div[2]/div/div/div[2]/div[1]/div[2]/div[3]/div[1]/div/input</td>
+	<td>Temp</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${Temp}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>id=schedule-menu</td>
+	<td>Scheduling</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=Thermostat Settings</td>
+	<td>Thermostat Settings</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=Account Settings</td>
+	<td>Account Settings</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=Help Center</td>
+	<td>Help Center</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td></td>
+	<td>20000</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=Log Out</td>
+	<td>Log Out</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=Sensicomfort.com</td>
+	<td>Sensicomfort.com</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=Legal/Warranty</td>
+	<td>Legal/Warranty</td>
+</tr>
+<tr>
+	<td>waitForText</td>
+	<td>link=Emerson.com</td>
+	<td>Emerson.com</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=humidity</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Log Out</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

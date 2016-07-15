@@ -1,0 +1,619 @@
+<html>
+<head><style type='text/css'>
+body, table {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-style: italic;
+}
+
+.selected {
+    background-color: #ffffcc;
+}
+
+.status_done {
+    background-color: #eeffee;
+}
+
+.status_passed {
+    background-color: #ccffcc;
+}
+
+.status_failed {
+    background-color: #ffcccc;
+}
+
+.breakpoint {
+    background-color: #cccccc;
+    border: 1px solid black;
+}
+</style><title>Test suite results</title></head>
+<body>
+<h1>Test suite results </h1>
+
+<table>
+<tr>
+<td>result:</td>
+<td>passed</td>
+</tr>
+<tr>
+<td>totalTime:</td>
+<td>142</td>
+</tr>
+<tr>
+<td>numTestTotal:</td>
+<td>1</td>
+</tr>
+<tr>
+<td>numTestPasses:</td>
+<td>1</td>
+</tr>
+<tr>
+<td>numTestFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandPasses:</td>
+<td>28</td>
+</tr>
+<tr>
+<td>numCommandFailures:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>numCommandErrors:</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Selenium Version:</td>
+<td>2.49</td>
+</tr>
+<tr>
+<td>Selenium Revision:</td>
+<td>.0</td>
+</tr>
+<tr>
+<td>
+<table id="suiteTable" class="selenium" border="1" cellpadding="1" cellspacing="1"><tbody>
+<tr class="title status_passed"><td><b>Test Suite</b></td></tr>
+<tr class="  status_passed"><td><a href="#testresult0">CGProPortalTestCase</a></td></tr>
+</tbody></table>
+
+
+</td>
+<td>&nbsp;</td>
+</tr>
+</table><table><tr>
+<td><a name="testresult0">CGProPortalTestCase.html</a><br/><div>
+<table border="1" cellpadding="1" cellspacing="1">
+<thead>
+<tr class="title status_passed"><td rowspan="1" colspan="3">CGProPortalTestCase</td></tr>
+</thead><tbody>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>open</td>
+	<td>https://www.comfortguardpro.com/</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertTitle</td>
+	<td>Login</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=UserName</td>
+	<td>cg@cg.com</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=Password</td>
+	<td>cg1</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAtAndWait</td>
+	<td>css=input.orange.last</td>
+	<td>200000</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>pause</td>
+	<td></td>
+	<td>200000</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertTitle</td>
+	<td>Account Summary</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Pre-Registration (11)</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertTitle</td>
+	<td>Pre-Registration Search Results</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=div.span3.search-name &gt; p</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertTitle</td>
+	<td>Update Device Activation</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//form[@id='frmActivation']/h2[2]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAtAndWait</td>
+	<td>id=btnSC</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertTitle</td>
+	<td>Update Device Activation</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=page-container</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Activate</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertTitle</td>
+	<td>Existing Account Lookup</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=div.span8 &gt; #EmailAddress</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>css=div.span8 &gt; #EmailAddress</td>
+	<td>Ashley.polce@hotmail.com</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=submitSearchEAS</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertTitle</td>
+	<td>Home Owner Devices</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=btnBack</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertTitle</td>
+	<td>Existing Account Lookup</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=div.span8 &gt; #EmailAddress</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>css=div.span8 &gt; #EmailAddress</td>
+	<td>abhijitr.patil@emerson.com</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=submitSearchEAS</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertTitle</td>
+	<td>Existing Account Lookup</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>//button[@type='button']</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertTitle</td>
+	<td>Pre-Register New Account</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAtAndWait</td>
+	<td>link=ComfortGuard</td>
+	<td>ComfortGuard</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertTitle</td>
+	<td>Account Summary</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Pre-Registration (11)</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertTitle</td>
+	<td>Pre-Registration Search Results</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>css=div.span3.search-name &gt; p</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertTitle</td>
+	<td>Update Device Activation</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=IndoorSystemTypeID</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>id=IndoorSystemTypeID</td>
+	<td>label=air handler - no heat pack</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>//button[@type='button']</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=IndoorUnitModel</td>
+	<td>TUFGVS123EF</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=KW</td>
+	<td>2</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>id=HomeownerEquipment_IndoorUnitFilterType</td>
+	<td>label=HEPA</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=option[value="HEPA"]</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=HomeownerEquipment_IndoorUnitFilterSizeHeight</td>
+	<td>2</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=btnSC2</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertTitle</td>
+	<td>Update Device Activation</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=SkipOutdoorUnit</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>id=RdbOutdoorEquipmentNewYes</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>select</td>
+	<td>id=OutdoorSystemTypeID</td>
+	<td>label=air conditioner</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=OutdoorUnitManufacturer</td>
+	<td>Trane</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>type</td>
+	<td>id=OutdoorUnitModel</td>
+	<td>4tt6030</td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=btnSaveAndExit</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertTitle</td>
+	<td>Update Device Activation</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>id=btnActivateNow</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertTitle</td>
+	<td>Update Device Activation</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>link=Pro Account: ComfortGuard Installer</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAtAndWait</td>
+	<td>link=ComfortGuard</td>
+	<td>ComfortGuard</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertTitle</td>
+	<td>Account Summary</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAtAndWait</td>
+	<td>link=ComfortGuard</td>
+	<td>ComfortGuard</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertTitle</td>
+	<td>Account Summary</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Status â??</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertTitle</td>
+	<td>Account Summary</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Status â?¼</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertTitle</td>
+	<td>Account Summary</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Status â?²</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertTitle</td>
+	<td>Account Summary</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Alert date &amp; time â??</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertTitle</td>
+	<td>Account Summary</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Alert date &amp; time â?²</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertTitle</td>
+	<td>Account Summary</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Alert date &amp; time â?¼</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertTitle</td>
+	<td>Account Summary</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Activate</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertTitle</td>
+	<td>Existing Account Lookup</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Support</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertTitle</td>
+	<td>Support</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Feedback</td>
+	<td></td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertTitle</td>
+	<td>Feedback</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAtAndWait</td>
+	<td>link=ComfortGuard</td>
+	<td>ComfortGuard</td>
+</tr>
+<tr class="  status_passed" style="cursor: pointer;">
+	<td>assertTitle</td>
+	<td>Account Summary</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>click</td>
+	<td>css=a.handle &gt; span</td>
+	<td></td>
+</tr>
+<tr class="  status_done" style="cursor: pointer;">
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+
+</div></td>
+<td>&nbsp;</td>
+</tr></table><pre>
+info: Starting test /selenium-server/tests/CGProPortalTestCase.html
+info: Executing: |open | https://www.comfortguardpro.com/ |  |
+info: Executing: |assertTitle | Login |  |
+info: Executing: |type | id=UserName | cg@cg.com |
+info: Executing: |type | id=Password | cg1 |
+info: Executing: |clickAtAndWait | css=input.orange.last | 200000 |
+info: Executing: |pause |  | 200000 |
+info: Executing: |assertTitle | Account Summary |  |
+info: Executing: |clickAndWait | link=Pre-Registration (11) |  |
+info: Executing: |assertTitle | Pre-Registration Search Results |  |
+info: Executing: |clickAndWait | css=div.span3.search-name &gt; p |  |
+info: Executing: |assertTitle | Update Device Activation |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | //form[@id=&apos;frmActivation&apos;]/h2[2] |  |
+info: Executing: |clickAtAndWait | id=btnSC |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |assertTitle | Update Device Activation |  |
+info: Executing: |click | id=page-container |  |
+info: Executing: |clickAndWait | link=Activate |  |
+info: Executing: |assertTitle | Existing Account Lookup |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |click | css=div.span8 &gt; #EmailAddress |  |
+info: Executing: |type | css=div.span8 &gt; #EmailAddress | Ashley.polce@hotmail.com |
+info: Executing: |clickAndWait | id=submitSearchEAS |  |
+info: Executing: |assertTitle | Home Owner Devices |  |
+info: Executing: |clickAndWait | id=btnBack |  |
+info: Executing: |assertTitle | Existing Account Lookup |  |
+info: Executing: |click | css=div.span8 &gt; #EmailAddress |  |
+info: Executing: |type | css=div.span8 &gt; #EmailAddress | abhijitr.patil@emerson.com |
+info: Executing: |clickAndWait | id=submitSearchEAS |  |
+info: Executing: |assertTitle | Existing Account Lookup |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAndWait | //button[@type=&apos;button&apos;] |  |
+info: Executing: |assertTitle | Pre-Register New Account |  |
+info: Executing: |selectWindow | null |  |
+info: Executing: |clickAtAndWait | link=ComfortGuard | ComfortGuard |
+info: Executing: |assertTitle | Account Summary |  |
+info: Executing: |clickAndWait | link=Pre-Registration (11) |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |assertTitle | Pre-Registration Search Results |  |
+info: Executing: |clickAndWait | css=div.span3.search-name &gt; p |  |
+info: Executing: |assertTitle | Update Device Activation |  |
+info: Executing: |click | id=IndoorSystemTypeID |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |select | id=IndoorSystemTypeID | label=air handler - no heat pack |
+info: Executing: |click | //button[@type=&apos;button&apos;] |  |
+info: Executing: |type | id=IndoorUnitModel | TUFGVS123EF |
+info: Executing: |type | id=KW | 2 |
+info: Executing: |select | id=HomeownerEquipment_IndoorUnitFilterType | label=HEPA |
+info: Executing: |click | css=option[value=&quot;HEPA&quot;] |  |
+info: Executing: |type | id=HomeownerEquipment_IndoorUnitFilterSizeHeight | 2 |
+info: Executing: |clickAndWait | id=btnSC2 |  |
+info: Executing: |assertTitle | Update Device Activation |  |
+info: Executing: |click | id=SkipOutdoorUnit |  |
+info: Executing: |click | id=RdbOutdoorEquipmentNewYes |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |select | id=OutdoorSystemTypeID | label=air conditioner |
+info: Executing: |type | id=OutdoorUnitManufacturer | Trane |
+info: Executing: |type | id=OutdoorUnitModel | 4tt6030 |
+info: Executing: |clickAndWait | id=btnSaveAndExit |  |
+info: Executing: |assertTitle | Update Device Activation |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAndWait | id=btnActivateNow |  |
+info: Executing: |assertTitle | Update Device Activation |  |
+info: Executing: |click | link=Pro Account: ComfortGuard Installer |  |
+info: Executing: |clickAtAndWait | link=ComfortGuard | ComfortGuard |
+info: Executing: |assertTitle | Account Summary |  |
+info: Executing: |clickAtAndWait | link=ComfortGuard | ComfortGuard |
+info: Executing: |assertTitle | Account Summary |  |
+info: Executing: |clickAndWait | link=Status â?? |  |
+info: Executing: |assertTitle | Account Summary |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAndWait | link=Status â?¼ |  |
+info: Executing: |assertTitle | Account Summary |  |
+info: Executing: |clickAndWait | link=Status â?² |  |
+info: Executing: |assertTitle | Account Summary |  |
+info: Executing: |clickAndWait | link=Alert date &amp; time â?? |  |
+info: Executing: |assertTitle | Account Summary |  |
+info: Executing: |clickAndWait | link=Alert date &amp; time â?² |  |
+info: Executing: |assertTitle | Account Summary |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |clickAndWait | link=Alert date &amp; time â?¼ |  |
+info: Executing: |assertTitle | Account Summary |  |
+info: Executing: |clickAndWait | link=Activate |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |assertTitle | Existing Account Lookup |  |
+info: Executing: |clickAndWait | link=Support |  |
+info: Executing: |assertTitle | Support |  |
+info: Executing: |clickAndWait | link=Feedback |  |
+info: Executing: |assertTitle | Feedback |  |
+info: Executing: |clickAtAndWait | link=ComfortGuard | ComfortGuard |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+info: Executing: |assertTitle | Account Summary |  |
+info: Executing: |click | css=a.handle &gt; span |  |
+info: Executing: |clickAndWait | link=Logout |  |
+info: Selenium 1.0 (Core, RC, etc) is no longer under active development. Please update to WebDriver ASAP
+</pre></body></html>

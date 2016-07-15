@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www.comfortguardpro.com/" />
+<title>CGProPortalTestCase</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">CGProPortalTestCase</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>https://www.comfortguardpro.com/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=UserName</td>
+	<td>cg@cg.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Password</td>
+	<td>cg1</td>
+</tr>
+<tr>
+	<td>clickAtAndWait</td>
+	<td>css=input.orange.last</td>
+	<td>200000</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td></td>
+	<td>200000</td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Account Summary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Pre-Registration (11)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Pre-Registration Search Results</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.span3.search-name &gt; p</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Update Device Activation</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//form[@id='frmActivation']/h2[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAtAndWait</td>
+	<td>id=btnSC</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Update Device Activation</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=page-container</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Activate</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Existing Account Lookup</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.span8 &gt; #EmailAddress</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=div.span8 &gt; #EmailAddress</td>
+	<td>Ashley.polce@hotmail.com</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submitSearchEAS</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Home Owner Devices</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btnBack</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Existing Account Lookup</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.span8 &gt; #EmailAddress</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>css=div.span8 &gt; #EmailAddress</td>
+	<td>abhijitr.patil@emerson.com</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=submitSearchEAS</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Existing Account Lookup</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[@type='button']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Pre-Register New Account</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAtAndWait</td>
+	<td>link=ComfortGuard</td>
+	<td>ComfortGuard</td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Account Summary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Pre-Registration (11)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Pre-Registration Search Results</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.span3.search-name &gt; p</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Update Device Activation</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=IndoorSystemTypeID</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=IndoorSystemTypeID</td>
+	<td>label=air handler - no heat pack</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@type='button']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=IndoorUnitModel</td>
+	<td>TUFGVS123EF</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=KW</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=HomeownerEquipment_IndoorUnitFilterType</td>
+	<td>label=HEPA</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=option[value=&quot;HEPA&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=HomeownerEquipment_IndoorUnitFilterSizeHeight</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btnSC2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Update Device Activation</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=SkipOutdoorUnit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=RdbOutdoorEquipmentNewYes</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=OutdoorSystemTypeID</td>
+	<td>label=air conditioner</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=OutdoorUnitManufacturer</td>
+	<td>Trane</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=OutdoorUnitModel</td>
+	<td>4tt6030</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btnSaveAndExit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Update Device Activation</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btnActivateNow</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Update Device Activation</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Pro Account: ComfortGuard Installer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAtAndWait</td>
+	<td>link=ComfortGuard</td>
+	<td>ComfortGuard</td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Account Summary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAtAndWait</td>
+	<td>link=ComfortGuard</td>
+	<td>ComfortGuard</td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Account Summary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Status ↕</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Account Summary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Status ▼</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Account Summary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Status ▲</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Account Summary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Alert date &amp; time ↕</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Account Summary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Alert date &amp; time ▲</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Account Summary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Alert date &amp; time ▼</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Account Summary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Activate</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Existing Account Lookup</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Support</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Support</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Feedback</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Feedback</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAtAndWait</td>
+	<td>link=ComfortGuard</td>
+	<td>ComfortGuard</td>
+</tr>
+<tr>
+	<td>assertTitle</td>
+	<td>Account Summary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=a.handle &gt; span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,4 +1,17 @@
-﻿$servers = "icda-101.prod.sensi","BS-106-PRD","BS-108-PRD","BS-109-PRD","rmq-106.prod.sensi","rmq-105.prod.sensi","rmq-104.prod.sensi","rmq-103.prod.sensi","rmq-101.prod.sensi"
+﻿
+#+-------------------------------------------------------------------+  
+#| = : = : = : = : = : = : = : = : = : = : = : = : = : = : = : = : = |  
+#|{>/-------------------------------------------------------------\<}|           
+#|: | Author:  Abhijit Patil`                                     | :|           
+#| :| Email:   abhijitr.patil@emerson.com
+#|: | Purpose: Periodic ping all of the production servers     
+#|: |                    Date: 10-June-2016        
+#| :| 	    						 							  |: | 
+#|{>\-------------------------------------------------------------/<}|
+#| = : = : = : = : = : = : = : = : = : = : = : = : = : = : = : = : = |
+#+-------------------------------------------------------------------+
+
+$servers = "icda-101.prod.sensi","BS-106-PRD","BS-108-PRD","BS-109-PRD","rmq-106.prod.sensi","rmq-105.prod.sensi","rmq-104.prod.sensi","rmq-103.prod.sensi","rmq-101.prod.sensi"
 
 foreach ( $server in $servers ) {
 		
@@ -23,19 +36,4 @@ foreach ( $server in $servers ) {
 					}			
 					
 }
-<#
-Function Mailer ($emailTo){
-$message = @"
-                                
-"@       
-
-$smtpserver="smtp.gmail.com"
-$smtp=new-object Net.Mail.SmtpClient($smtpServer)
-$emailFrom="abhijit1985@gmail.com"
-$emailTo="vijay.bharekar@emerson.com"
-$subject="Test"
-$message="All servers are working"
-$smtp.Send($emailFrom, $emailTo, $subject, $message)
-#>
-
-	### ### End of Script
+### ### End of Script

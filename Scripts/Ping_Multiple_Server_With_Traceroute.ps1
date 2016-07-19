@@ -1,17 +1,4 @@
-﻿
-#+-------------------------------------------------------------------+  
-#| = : = : = : = : = : = : = : = : = : = : = : = : = : = : = : = : = |  
-#|{>/-------------------------------------------------------------\<}|           
-#|: | Author:  Abhijit Patil`                                     | :|           
-#| :| Email:   abhijitr.patil@emerson.com
-#|: | Purpose: Periodic ping all of the production servers     
-#|: |                    Date: 10-June-2016        
-#| :| 	    						 							  |: | 
-#|{>\-------------------------------------------------------------/<}|
-#| = : = : = : = : = : = : = : = : = : = : = : = : = : = : = : = : = |
-#+-------------------------------------------------------------------+
-
-$servers = "icda-101.prod.sensi","BS-106-PRD","BS-108-PRD","BS-109-PRD","rmq-106.prod.sensi","rmq-105.prod.sensi","rmq-104.prod.sensi","rmq-103.prod.sensi","rmq-101.prod.sensi"
+﻿$servers = "172.24.35.49", "riak-101.prod", "riak-102.prod", "riak-104.prod", "riak-105.prod.sensi", "tad.nonprod.sensi","icda-100.prod", "icda-101.prod.sensi","icda-102.prod.sensi","icda-103.prod.sensi","icda-105.prod","icda-106.prod.sensi","icda-107.prod","icda-108-.prod","BS-106-PRD","BS-107-PROD","BS-108-PRD","BS-109-PRD","rmq-106.prod.sensi","rmq-105.prod.sensi","rmq-104.prod.sensi","rmq-103.prod.sensi","rmq-101.prod.sensi"
 
 foreach ( $server in $servers ) {
 		
@@ -36,4 +23,19 @@ foreach ( $server in $servers ) {
 					}			
 					
 }
-### ### End of Script
+<#
+Function Mailer ($emailTo){
+$message = @"
+                                
+"@       
+
+$smtpserver="smtp.gmail.com"
+$smtp=new-object Net.Mail.SmtpClient($smtpServer)
+$emailFrom="abhijit1985@gmail.com"
+$emailTo="vijay.bharekar@emerson.com"
+$subject="Test"
+$message="All servers are working"
+$smtp.Send($emailFrom, $emailTo, $subject, $message)
+#>
+
+	### ### End of Script

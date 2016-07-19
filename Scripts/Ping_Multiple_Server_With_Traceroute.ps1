@@ -1,4 +1,17 @@
-﻿$servers = "172.24.35.49", "riak-101.prod", "riak-102.prod", "riak-104.prod", "riak-105.prod.sensi", "tad.nonprod.sensi","icda-100.prod", "icda-101.prod.sensi","icda-102.prod.sensi","icda-103.prod.sensi","icda-105.prod","icda-106.prod.sensi","icda-107.prod","icda-108-.prod","BS-106-PRD","BS-107-PROD","BS-108-PRD","BS-109-PRD","rmq-106.prod.sensi","rmq-105.prod.sensi","rmq-104.prod.sensi","rmq-103.prod.sensi","rmq-101.prod.sensi"
+﻿#+-------------------------------------------------------------------+  
+#| = : = : = : = : = : = : = : = : = : = : = : = : = : = : = : = : = |  
+#|{>/-------------------------------------------------------------\<}|           
+#|: | Author:  Abhijit Patil                                      | :|           
+#| :| Email:   abhijitr.patil@emerson.com
+#|: | Purpose: Ping Multiple Servers    
+#|: |                    Date: 16-July-2016        
+#| :| 	/^(o.o)^\    				      						  |: | 
+#|{>\-------------------------------------------------------------/<}|
+#| = : = : = : = : = : = : = : = : = : = : = : = : = : = : = : = : = |
+#+-------------------------------------------------------------------+
+
+
+$servers = "172.24.35.49", "riak-101.prod", "riak-102.prod", "riak-104.prod", "riak-105.prod.sensi", "tad.nonprod.sensi","icda-100.prod", "icda-101.prod.sensi","icda-102.prod.sensi","icda-103.prod.sensi","icda-105.prod","icda-106.prod.sensi","icda-107.prod","icda-108-.prod","BS-106-PRD","BS-107-PROD","BS-108-PRD","BS-109-PRD","rmq-106.prod.sensi","rmq-105.prod.sensi","rmq-104.prod.sensi","rmq-103.prod.sensi","rmq-101.prod.sensi"
 
 foreach ( $server in $servers ) {
 		

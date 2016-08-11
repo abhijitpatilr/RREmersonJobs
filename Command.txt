@@ -1,0 +1,13 @@
+java -jar selenium-server.jar -htmlSuite "*firefox" <sitename> "c:\absolute\path\to\my\HTMLSuite.html" "%WORKSPACE%\results.htm"
+
+C:\Users\abhijitr.patil\Downloads\
+
+java -jar selenium-server-standalone-2.49.0.jar -htmlSuite "*firefox" https://mythermostat.sensicomfort.com/  "D:\Selenium Script\Sensi Web Portal\SensiTstatMonitoring.html" "D:\Selenium Script\Sensi Web Portal\SensiTstatMonitoring-RESULT.html"
+
+SuiteElab
+
+java -jar E:\SeleniumJenkins\selenium-server-standalone-2.49.0.jar -htmlSuite "*firefox" https://mythermostat.sensicomfort.com/  "E:\SeleniumJenkins\SuiteSensi.html" "E:\SeleniumJenkins\SensiTstatMonitoring-RESULT.html"
+
+java -jar E:\SeleniumJenkins\selenium-server-standalone-2.49.0.jar -htmlSuite "*firefox" https://mythermostat.sensicomfort.com/  "E:\SeleniumJenkins\SensiWebPortal\SensiTstatMonitoringSuite.html" "E:\SeleniumJenkins\SensiWebPortal\SensiTstatMonitoring-RESULT.html"
+
+java -jar E:\SeleniumJenkins\selenium-server-standalone-2.49.0.jar -htmlSuite "*firefox" https://sensicomfort.com/  "E:\SeleniumJenkins\CGHOPortal\CGProPortalTestSuite.html" "E:\SeleniumJenkins\CGProPortal\CGProPortal-RESULT.html"
